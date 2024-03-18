@@ -23,3 +23,13 @@ alias home="cd ~"
 alias gs="git status"
 alias gp="git push"
 alias gaa="git add ."
+
+# fzf man
+alias fman="compgen -c | fzf | xargs man"
+# open fzf selection with code
+alias codef="fzf --bind 'enter:become(code {})'"
+# open vim with fzf selection
+alias vimf="fzf --bind 'enter:execute(vim {})'"
+
+# Python
+alias python=python3
