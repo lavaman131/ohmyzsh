@@ -31,5 +31,8 @@ alias codef="fzf --bind 'enter:become(code {})'"
 # open vim with fzf selection
 alias vimf="fzf --bind 'enter:execute(vim {})'"
 
+# kill ports
+alias killport="lsof -i -P -n | grep LISTEN | fzf --height 10 | awk '{print \$2}' | xargs kill -9"
+
 # Python
 alias python=python3
