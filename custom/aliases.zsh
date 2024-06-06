@@ -24,6 +24,10 @@ alias gs="git status"
 alias gp="git push"
 alias gaa="git add ."
 
+# kitty
+alias s="kitten ssh"
+alias icat="kitten icat"
+
 # fzf man
 alias fman="compgen -c | fzf | xargs man"
 # open fzf selection with code
